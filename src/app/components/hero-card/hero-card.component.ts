@@ -6,7 +6,7 @@ import { Component, OnInit,Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./hero-card.component.css']
 })
 export class HeroCardComponent implements OnInit {
-  @Input() heros:any= [];
+  @Input() personajes:any= [];
   @Input() index :number;
 
   @Output() heroSelected: EventEmitter<number>;

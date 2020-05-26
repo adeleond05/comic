@@ -2,16 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { PersonajeService,Personaje } from '../../service/personaje.service';
 import { Router } from '@angular/router';
 
-
 @Component({
-  selector: 'app-heroes',
-  templateUrl: './heroes.component.html',
-  styles: [
-  ]
+  selector: 'app-villanos',
+  templateUrl: './villanos.component.html',
+  styleUrls: ['./villanos.component.css']
 })
-export class HeroesComponent implements OnInit {
-  
-  // hero:any[]=[];
+export class VillanosComponent implements OnInit {
+
   personaje:Personaje[]=[];
   constructor( private _personajeService: PersonajeService, private _router: Router) { 
   }
@@ -21,9 +18,8 @@ export class HeroesComponent implements OnInit {
     console.log(this.personaje);
   }
   
-  verHeroe(id:number){
+  verVillano(id:number){
     this._router.navigate(['/detalles',id]);
   }
-
 
 }

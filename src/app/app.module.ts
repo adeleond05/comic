@@ -16,8 +16,10 @@ import { APP_ROUTING } from './app.routes';
 
 // SERVICIOS
 
-import { HeroService } from './service/hero.service';
+import { PersonajeService } from './service/personaje.service';
 import { HeroCardComponent } from './components/hero-card/hero-card.component';
+import { VillanosComponent } from './components/villanos/villanos.component';
+import { VillanoCardComponent } from './components/villano-card/villano-card.component';
 
 
 
@@ -30,14 +32,16 @@ import { HeroCardComponent } from './components/hero-card/hero-card.component';
     AboutComponent,
     HeroDetailsComponent,
     HeroSearchComponent,
-    HeroCardComponent    
+    HeroCardComponent,
+    VillanosComponent,
+    VillanoCardComponent    
   ],
   imports: [
     BrowserModule,
     APP_ROUTING
   ],
   providers: [
-    HeroService
+    PersonajeService
   ],
   bootstrap: [AppComponent]
 })
